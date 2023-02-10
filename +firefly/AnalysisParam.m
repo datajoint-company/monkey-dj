@@ -1,4 +1,4 @@
-%{
+    %{
 # Analysis parameters
 analysisparam_id=1              : int               # unique id for this paramater set
 ---
