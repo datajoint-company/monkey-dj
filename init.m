@@ -1,4 +1,4 @@
-% clear all
+clear all;
 
 % Load configuration
 dj.config();
