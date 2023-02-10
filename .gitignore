@@ -201,6 +201,10 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
+# DataJoint config files
+dj_*.json
+
+
 # Startup file
 startup.m
 
