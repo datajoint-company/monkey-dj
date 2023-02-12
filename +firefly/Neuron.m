@@ -15,10 +15,10 @@ unit_type                   : varchar(20)       # cluster type ['sua', 'mua']
 spike_times                 : longblob          # spike times [s]
 spike_waveform              : blob              # spike waveform [muV]
 spike_width                 : float             # spike width [ms]
-neuron_tblockstart=0        : longblob          # block start markers [s]
-neuron_tbeg=0               : longblob          # target onset marker [s]
-neuron_tend=0               : longblob          # end of trial marker [s]
-neuron_trew=0               : longblob          # reward marker [s]
+neuron_tblockstart=null     : longblob          # block start markers [s]
+neuron_tbeg=null            : longblob          # target onset marker [s]
+neuron_tend=null            : longblob          # end of trial marker [s]
+neuron_trew=null            : longblob          # reward marker [s]
 %}
 
 classdef Neuron < dj.Imported
