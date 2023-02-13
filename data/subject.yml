@@ -1,0 +1,11 @@
+- subject_name: Dylan # primary key
+  subject_id: 0
+  species: monkey
+  sex: M
+  description: From the sample dataset
+
+- subject_name: JR
+  subject_id: 1
+  species: monkey
+  sex: M
+  description: Test
