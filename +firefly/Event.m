@@ -5,13 +5,13 @@
 -> firefly.DataAcquisitionParam
 ---
 # add additional attributes
-tblockstart=0               : longblob     # time when experimental block started
-tbeg=0                      : longblob     # time when target appeared
-tend=0                      : longblob     # time when trial ended
-trew=0                      : longblob     # time when reward delivered
-tptb=0                      : longblob     # time when perturbation started
-tmove=0                     : longblob     # time when movement started
-tstop=0                     : longblob     # time when movement ended
+tblockstart=null               : longblob     # time when experimental block started
+tbeg=null                      : longblob     # time when target appeared
+tend=null                      : longblob     # time when trial ended
+trew=null                      : longblob     # time when reward delivered
+tptb=null                      : longblob     # time when perturbation started
+tmove=null                     : longblob     # time when movement started
+tstop=null                     : longblob     # time when movement ended
 %}
 
 classdef Event < dj.Imported    

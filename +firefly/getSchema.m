@@ -1,7 +1,8 @@
 function obj = getSchema
 persistent schemaObject
 if isempty(schemaObject)
-    schemaObject = dj.Schema(dj.conn, 'firefly', 'firefly');
+    global databasePrefix
+    schemaObject = dj.Schema(dj.conn, 'firefly', [databasePrefix, 'firefly']);
 end
 obj = schemaObject;
 end

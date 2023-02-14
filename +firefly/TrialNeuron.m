@@ -8,12 +8,12 @@ trial_number=1              : int           # trial number
 # add additional attributes
 spike_times                 : longblob      # time of spikes
 
-neuron_tbeg=0               : tinyblob      # time when target appeared
-neuron_tmove=0              : tinyblob      # time when movement started
-neuron_tstop=0              : tinyblob      # time when movement ended
-neuron_trew=0               : tinyblob      # time when reward delivered
-neuron_tend=0               : tinyblob      # time when trial ended
-neuron_tptb=0               : tinyblob      # time when perturbation started
+neuron_tbeg=null            : tinyblob      # time when target appeared
+neuron_tmove=null           : tinyblob      # time when movement started
+neuron_tstop=null           : tinyblob      # time when movement ended
+neuron_trew=null            : tinyblob      # time when reward delivered
+neuron_tend=null            : tinyblob      # time when trial ended
+neuron_tptb=null            : tinyblob      # time when perturbation started
 %}
 
 classdef TrialNeuron < dj.Computed

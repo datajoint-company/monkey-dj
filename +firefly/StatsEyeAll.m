@@ -5,82 +5,82 @@
 -> firefly.AnalysisParam
 ---
 # add additional attributes
-saccade_trueval=0                   : longblob          # amplitude of saccade [deg]     
-saccade_truedir=0                   : longblob          # direction of saccade [deg]
-saccade_predval=0                   : longblob          # predicted amplitude [deg]
-saccade_preddir=0                   : longblob          # predicted direction [deg]
-saccade_time=0                      : longblob          # time of saccade [s]
+saccade_trueval=null                : longblob          # amplitude of saccade [deg]     
+saccade_truedir=null                : longblob          # direction of saccade [deg]
+saccade_predval=null                : longblob          # predicted amplitude [deg]
+saccade_preddir=null                : longblob          # predicted direction [deg]
+saccade_time=null                   : longblob          # time of saccade [s]
 
 eyebehvcorr_r=0                     : double            # corr(target-tracking error, stopping error)
 eyebehvcorr_pval=0                  : double            # pval of corr
-eyepos_err=0                        : longblob          # target-tracking error
-stoppos_err=0                       : longblob          # stopping error
+eyepos_err=null                     : longblob          # target-tracking error
+stoppos_err=null                    : longblob          # stopping error
 
-ver_pred=0                          : longblob          # predicted vertical eye position [deg]
-hor_pred=0                          : longblob          # predicted horiz eye position [deg]
-verdiff_pred=0                      : longblob          # predicted vertical vergence [deg]
-hordiff_pred=0                      : longblob          # predicted horiz vergence [deg]
-ver_true=0                          : longblob          # vertical eye position [deg]
-hor_true=0                          : longblob          # horiz eye position [deg]
-verdiff_true=0                      : longblob          # vertical vergence [deg]
-hordiff_true=0                      : longblob          # horiz vergence [deg]
+ver_pred=null                       : longblob          # predicted vertical eye position [deg]
+hor_pred=null                       : longblob          # predicted horiz eye position [deg]
+verdiff_pred=null                   : longblob          # predicted vertical vergence [deg]
+hordiff_pred=null                   : longblob          # predicted horiz vergence [deg]
+ver_true=null                       : longblob          # vertical eye position [deg]
+hor_true=null                       : longblob          # horiz eye position [deg]
+verdiff_true=null                   : longblob          # vertical vergence [deg]
+hordiff_true=null                   : longblob          # horiz vergence [deg]
 
-ver_xcorr=0                         : longblob          # cross-corr between actual and pred vertical
-ver_xcorrlag=0                      : longblob          # cross-corr timelag
-ver_xcorrshuf=0                     : longblob          # shuffled cross-corr
-hor_xcorr=0                         : longblob          # cross-corr between actual and pred horiz
-hor_xcorrlag=0                      : longblob          # cross-corr timelag
-hor_xcorrshuf=0                     : longblob          # shuffled cross-corr
+ver_xcorr=null                      : longblob          # cross-corr between actual and pred vertical
+ver_xcorrlag=null                   : longblob          # cross-corr timelag
+ver_xcorrshuf=null                  : longblob          # shuffled cross-corr
+hor_xcorr=null                      : longblob          # cross-corr between actual and pred horiz
+hor_xcorrlag=null                   : longblob          # cross-corr timelag
+hor_xcorrshuf=null                  : longblob          # shuffled cross-corr
 
-ver_rfix=0                          : longblob          # corr between actual and pred vertical fixation-aligned
-ver_pvalfix=0                       : longblob          # pval of corr
-hor_rfix=0                          : longblob          # corr between actual and pred horiz
-hor_pvalfix=0                       : longblob          # pval of corr
-verdiff_rfix=0                      : longblob          # corr between actual and pred vert vergence
-verdiff_pvalfix=0                   : longblob          # pval of corr
-hordiff_rfix=0                      : longblob          # corr between actual and pred horiz vergence
-hordiff_pvalfix=0                   : longblob          # pval of corr
+ver_rfix=null                       : longblob          # corr between actual and pred vertical fixation-aligned
+ver_pvalfix=null                    : longblob          # pval of corr
+hor_rfix=null                       : longblob          # corr between actual and pred horiz
+hor_pvalfix=null                    : longblob          # pval of corr
+verdiff_rfix=null                   : longblob          # corr between actual and pred vert vergence
+verdiff_pvalfix=null                : longblob          # pval of corr
+hordiff_rfix=null                   : longblob          # corr between actual and pred horiz vergence
+hordiff_pvalfix=null                : longblob          # pval of corr
 
-cossim_meanfix=0                    : longblob          # mean cosine similarity (CS) fixation-aligned
-cossim_semfix=0                     : longblob          # sem
-cossim_meanshuffix=0                : longblob          # shuffled CS
-cossim_semshuffix=0                 : longblob          # sem of shuffled CS
-cossimgrouped_fix=0                 : longblob          # CS grouped by reward
+cossim_meanfix=null                 : longblob          # mean cosine similarity (CS) fixation-aligned
+cossim_semfix=null                  : longblob          # sem
+cossim_meanshuffix=null             : longblob          # shuffled CS
+cossim_semshuffix=null              : longblob          # sem of shuffled CS
+cossimgrouped_fix=null              : longblob          # CS grouped by reward
 
-varexp_meanfix=0                    : longblob          # mean variance explained (VE) fixation-aligned
-varexp_semfix=0                     : longblob          # sem
-varexp_meanshuffix=0                : longblob          # shuffled VE
-varexp_semshuffix=0                 : longblob          # sem of shuffled VE
-varexpgrouped_fix=0                 : longblob          # VE grouped by reward
-varexpbound_fix=0                   : longblob          # upper bound of VE
-sqerr_fix=0                         : longblob          # squared error
-var_pred_fix=0                      : longblob          # variance of predicted eye pos
-var_true_fix=0                      : longblob          # variance of actual eye pos
+varexp_meanfix=null                 : longblob          # mean variance explained (VE) fixation-aligned
+varexp_semfix=null                  : longblob          # sem
+varexp_meanshuffix=null             : longblob          # shuffled VE
+varexp_semshuffix=null              : longblob          # sem of shuffled VE
+varexpgrouped_fix=null              : longblob          # VE grouped by reward
+varexpbound_fix=null                : longblob          # upper bound of VE
+sqerr_fix=null                      : longblob          # squared error
+var_pred_fix=null                   : longblob          # variance of predicted eye pos
+var_true_fix=null                   : longblob          # variance of actual eye pos
 
-ver_rstop=0                         : longblob          # corr between actual and pred vertical stop-aligned
-ver_pvalstop=0                      : longblob          # pval of corr
-hor_rstop=0                         : longblob          # corr between actual and pred horiz
-hor_pvalstop=0                      : longblob          # pval of corr
-verdiff_rstop=0                     : longblob          # corr between actual and pred vert vergence
-verdiff_pvalstop=0                  : longblob          # pval of corr
-hordiff_rstop=0                     : longblob          # corr between actual and pred horiz stop-aligned
-hordiff_pvalstop=0                  : longblob          # pval of corr
+ver_rstop=null                      : longblob          # corr between actual and pred vertical stop-aligned
+ver_pvalstop=null                   : longblob          # pval of corr
+hor_rstop=null                      : longblob          # corr between actual and pred horiz
+hor_pvalstop=null                   : longblob          # pval of corr
+verdiff_rstop=null                  : longblob          # corr between actual and pred vert vergence
+verdiff_pvalstop=null               : longblob          # pval of corr
+hordiff_rstop=null                  : longblob          # corr between actual and pred horiz stop-aligned
+hordiff_pvalstop=null               : longblob          # pval of corr
 
-cossim_meanstop=0                   : longblob          # mean CS stop-aligned
-cossim_semstop=0                    : longblob          # sem
-cossim_meanshufstop=0               : longblob          # shuffled CS
-cossim_semshufstop=0                : longblob          # sem of shuffled estimate
-cossimgrouped_stop=0                : longblob          # CS grouped by reward
+cossim_meanstop=null                : longblob          # mean CS stop-aligned
+cossim_semstop=null                 : longblob          # sem
+cossim_meanshufstop=null            : longblob          # shuffled CS
+cossim_semshufstop=null             : longblob          # sem of shuffled estimate
+cossimgrouped_stop=null             : longblob          # CS grouped by reward
 
-varexp_meanstop=0                   : longblob          # mean VE stop-aligned
-varexp_semstop=0                    : longblob          # sem
-varexp_meanshufstop=0               : longblob          # shuffled VE
-varexp_semshufstop=0                : longblob          # sem of shuffled estimate
-varexpgrouped_stop=0                : longblob          # VE grouped by reward
-varexpbound_stop=0                  : longblob          # upper bound of VE
-sqerr_stop=0                        : longblob          # squared error
-var_pred_stop=0                     : longblob          # variance of predicted eye pos
-var_true_stop=0                     : longblob          # variance of actual eye pos
+varexp_meanstop=null                : longblob          # mean VE stop-aligned
+varexp_semstop=null                 : longblob          # sem
+varexp_meanshufstop=null            : longblob          # shuffled VE
+varexp_semshufstop=null             : longblob          # sem of shuffled estimate
+varexpgrouped_stop=null             : longblob          # VE grouped by reward
+varexpbound_stop=null               : longblob          # upper bound of VE
+sqerr_stop=null                     : longblob          # squared error
+var_pred_stop=null                  : longblob          # variance of predicted eye pos
+var_true_stop=null                  : longblob          # variance of actual eye pos
 %}
 
 classdef StatsEyeAll < dj.Computed

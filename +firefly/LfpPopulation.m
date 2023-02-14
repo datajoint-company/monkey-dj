@@ -12,12 +12,12 @@ electrode_type              : blob              # electrode type ['utah96','utah
 lfp_amplitude               : longblob          # lfp amplitude [muV]
 lfp_time                    : longblob          # time index [s]
 
-lfp_tbeg=0                  : longblob          # target onset marker [s]
-lfp_tmove=0                 : longblob          # target onset marker [s]
-lfp_tstop=0                 : longblob          # target onset marker [s]
-lfp_trew=0                  : longblob          # reward marker [s]
-lfp_tend=0                  : longblob          # end of trial marker [s]
-lfp_tptb=0                  : tinyblob          # data as array
+lfp_tbeg=null               : longblob          # target onset marker [s]
+lfp_tmove=null              : longblob          # target onset marker [s]
+lfp_tstop=null              : longblob          # target onset marker [s]
+lfp_trew=null               : longblob          # reward marker [s]
+lfp_tend=null               : longblob          # end of trial marker [s]
+lfp_tptb=null               : tinyblob          # data as array
 %}
 
 classdef LfpPopulation < dj.Imported

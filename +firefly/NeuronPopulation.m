@@ -12,12 +12,12 @@ electrode_type              : blob              # electrode type ['utah96','utah
 spike_counts                : longblob          # number of spikes
 behv_time                   : longblob          # time index [s]
 
-neuron_tbeg=0               : longblob          # target onset marker [s]
-neuron_tmove=0              : longblob          # target onset marker [s]
-neuron_tstop=0              : longblob          # target onset marker [s]
-neuron_trew=0               : longblob          # reward marker [s]
-neuron_tend=0               : longblob          # end of trial marker [s]
-neuron_tptb=0               : tinyblob          # data as array
+neuron_tbeg=null            : longblob          # target onset marker [s]
+neuron_tmove=null           : longblob          # target onset marker [s]
+neuron_tstop=null           : longblob          # target onset marker [s]
+neuron_trew=null            : longblob          # reward marker [s]
+neuron_tend=null            : longblob          # end of trial marker [s]
+neuron_tptb=null            : tinyblob          # data as array
 %}
 
 classdef NeuronPopulation < dj.Imported

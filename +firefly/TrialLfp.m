@@ -10,12 +10,12 @@ lfp_freqrange               : blob              # [fmin fmax]
 lfp_amplitude               : longblob          # hilbert-transformed
 lfp_time                    : longblob          # time index
 
-lfp_tbeg=0                  : tinyblob          # time when target appeared
-lfp_tmove=0                 : tinyblob          # time when movement started
-lfp_tstop=0                 : tinyblob          # time when movement ended
-lfp_trew=0                  : tinyblob          # time when reward delivered
-lfp_tend=0                  : tinyblob          # time when trial ended
-lfp_tptb=0                  : tinyblob          # time when perturbation started
+lfp_tbeg=null               : tinyblob          # time when target appeared
+lfp_tmove=null              : tinyblob          # time when movement started
+lfp_tstop=null              : tinyblob          # time when movement ended
+lfp_trew=null               : tinyblob          # time when reward delivered
+lfp_tend=null               : tinyblob          # time when trial ended
+lfp_tptb=null               : tinyblob          # time when perturbation started
 %}
 
 classdef TrialLfp < dj.Computed
