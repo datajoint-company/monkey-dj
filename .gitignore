@@ -201,4 +201,13 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
+# DataJoint config files
+dj_*.json
+
+
+# Startup file
+startup.m
+
+
+
 # End of https://www.gitignore.io/api/macos,linux,python,matlab

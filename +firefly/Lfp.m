@@ -13,10 +13,10 @@ brain_area                  : varchar(128)      # brain area targeted by electro
 lfp_amplitude               : longblob          # lfp amplitude [muV]
 lfp_time                    : longblob          # time index [s]
 
-lfp_tblockstart=0           : longblob          # block start markers [s]
-lfp_tbeg=0                  : longblob          # target onset marker [s]
-lfp_tend=0                  : longblob          # end of trial marker [s]
-lfp_trew=0                  : longblob          # reward marker [s]
+lfp_tblockstart=null        : longblob          # block start markers [s]
+lfp_tbeg=null               : longblob          # target onset marker [s]
+lfp_tend=null               : longblob          # end of trial marker [s]
+lfp_trew=null               : longblob          # reward marker [s]
 %}
 
 classdef Lfp < dj.Imported
